@@ -1,0 +1,5 @@
+node_modules
+.idea
+diagram.json
+diagram.pgerd
+diagram.xml
