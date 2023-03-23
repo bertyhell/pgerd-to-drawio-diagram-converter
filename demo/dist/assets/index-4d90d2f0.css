@@ -1,0 +1,1 @@
+.App{display:flex;flex-direction:column;align-content:center;align-items:center;font-family:Arial,sans-serif}h1{font-size:40px}input{margin:20px 20px 40px}button{padding:20px;width:300px;background-color:#98fb98;border-radius:5px;border:0;cursor:pointer}button:hover{background-color:#adff2f}body{min-height:100vh;background-color:#222;color:#fff}
