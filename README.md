@@ -1,10 +1,10 @@
 # pgerd-to-drawio-diagram-converter
 
-![hero.jpg](images/hero.jpg)
+![https://github.com/bertyhell/pgerd-to-drawio-diagram-converter/blob/main/images/hero.jpg](images/hero.jpg)
 
 Try it out on: https://bertyhell.github.io/pgerd-to-drawio-diagram-converter
 
-![manual.jpg](images/manual.jpg)
+![https://github.com/bertyhell/pgerd-to-drawio-diagram-converter/blob/main/images/manual.jpg](images/manual.jpg)
 
 ## Programmatic interface
 

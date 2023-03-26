@@ -10,6 +10,13 @@
   },
   "author": "Bert Verhelst",
   "license": "MIT",
+  "keywords": ["pgadmin", "drawio", "diagram", "converter", "convert", "browser", "nodejs", "json", "tables", "erd", "entity relation diagram", "sql", "foreign keys"],
+  "homepage": "https://bertyhell.github.io/pgerd-to-drawio-diagram-converter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bertyhell/pgerd-to-drawio-diagram-converter"
+  },
+  "url": "https://github.com/bertyhell/pgerd-to-drawio-diagram-converter/issues",
   "devDependencies": {
     "@types/cytoscape": "^3.19.9",
     "@types/jstoxml": "^2.0.2",
