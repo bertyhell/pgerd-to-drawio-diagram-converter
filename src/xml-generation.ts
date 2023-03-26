@@ -16,7 +16,7 @@ function generateTable(table: DiagramNode, layoutedNode: NodeCollection): XmlEle
 			_attrs: {
 				id: table.otherInfo.data.schema + '.' + table.otherInfo.data.name,
 				value: table.otherInfo.data.schema + '.' + table.otherInfo.data.name,
-				style: 'shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;',
+				style: 'shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;swimlaneLine=1;bottom=1;',
 				parent: '1',
 				vertex: '1',
 			},
@@ -26,8 +26,8 @@ function generateTable(table: DiagramNode, layoutedNode: NodeCollection): XmlEle
 					_attrs: {
 						x: layoutedNode.boundingbox().x1,
 						y: layoutedNode.boundingbox().y1,
-						width: '250',
-						height: table.otherInfo.data.columns.length * 30,
+						width: '300',
+						height: table.otherInfo.data.columns.length * 30 + 45,
 						as: 'geometry',
 					},
 				},
@@ -46,7 +46,7 @@ function generateRow(column: Column, columnIndex: number, table: DiagramNode): X
 			_name: 'mxCell',
 			_attrs: {
 				id: rowId,
-				value: String(30 * columnIndex),
+				value: '',
 				style: 'shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;',
 				parent: table.otherInfo.data.schema + '.' + table.otherInfo.data.name,
 				vertex: '1',
@@ -55,7 +55,7 @@ function generateRow(column: Column, columnIndex: number, table: DiagramNode): X
 				{
 					_name: 'mxGeometry',
 					_attrs: {
-						y: '30',
+						y: String(30 * columnIndex),
 						width: '250',
 						height: '30',
 						as: 'geometry',
@@ -76,7 +76,6 @@ function generateRow(column: Column, columnIndex: number, table: DiagramNode): X
 				{
 					_name: 'mxGeometry',
 					_attrs: {
-						y: '30',
 						width: '30',
 						height: '30',
 						as: 'geometry',

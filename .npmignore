@@ -1,0 +1,10 @@
+.idea
+demo
+docs
+images
+node_modules
+src
+.eslintrc.json
+.prettierrc
+diagram.example.xml
+tsconfig.json

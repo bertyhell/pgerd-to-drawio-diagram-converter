@@ -19,8 +19,8 @@ function mapTableToNode(table: DiagramNode): ElementDefinition {
 	return {
 		data: {
 			id: table.otherInfo.data.schema + '.' + table.otherInfo.data.name,
-			width: 250,
-			height: 30 * (table.otherInfo.data.columns.length + 1),
+			width: 300,
+			height: table.otherInfo.data.columns.length * 30 + 45,
 		},
 	};
 }
@@ -85,7 +85,7 @@ export function getGraphLayout(
 		avoidOverlap: true,
 		quality: 'draft',
 		fit: true,
-		padding: 10,
+		padding: 40,
 		nodeRepulsion: 4500,
 		idealEdgeLength: 250,
 		numIter: 1000,
