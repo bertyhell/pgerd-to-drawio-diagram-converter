@@ -1,7 +1,7 @@
 {
   "name": "pgerd-to-drawio-diagram-converter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Converts a Entity Relation Diagram that was exported from PgAdmin 5+ into an XML file that can be loaded into draw.io (diagrams.net) diagram editor",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
